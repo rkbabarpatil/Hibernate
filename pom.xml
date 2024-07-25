@@ -35,6 +35,17 @@
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.33</version>
 </dependency>
+  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>7.0.5.Final</version>
+</dependency>
+<dependency>  
+    <groupId>org.hibernate</groupId>  
+    <artifactId>org.ehcache</artifactId>  
+    <version>6.3.2.Final</version>  
+</dependency>  
   
   </dependencies>
 

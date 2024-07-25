@@ -7,14 +7,18 @@
   <session-factory>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <!-- property name="connection.driver_class">com.mysql.jdbc.Driver</property -->
-    <property name="connection.url">jdbc:mysql://localhost:3306/student</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/firstdatabase</property>
     <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
     <property name="connection.username">root</property>
     <property name="connection.password">root</property>
- <!-- <property name="current_session_context_class">thread</property> -->   
+ <!-- <property name="current_session_context_class">thread</property> --> 
+    <property name="cache.use_second_level_cache">true</property>   
+         <property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
     <property name="hbm2ddl.auto">update</property>
-    <!-- mapping class="com.mcnz.jpa.examples.Player" / -->
+    <mapping class="com.entity.roshanpractice.BankDetails"/>
+    <mapping class="com.entity.roshanpractice.EmployeeDetails"/>
+     
   </session-factory>
 </hibernate-configuration>
