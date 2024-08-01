@@ -14,6 +14,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Projection;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
 
 public class CriteriaDemo {
 	public static void main(String[] args) {
@@ -35,8 +39,17 @@ public class CriteriaDemo {
 //		 ss.merge(s4);
 //		 tr.commit();
 		 Criteria crs = ss.createCriteria(StudentRecords.class);
-		 List std = crs.list();
-		 System.out.println("Info - "+std);
+//		 List std = crs.list();
+//		 System.out.println("Info - "+std);
+		// crs.add(Restrictions.eq("sid", 1));
+//		 crs.add(Restrictions.gt("marks", 80));
+		// crs.add(Restrictions.like("sname", "%A"));
+//		 crs.addOrder(Order.desc("marks"));
+//		 crs.setFirstResult(2);
+//		 crs.setMaxResults(2);
+		 crs.setProjection(Projections.max("marks"));
+		 List result=crs.list();
+		 System.out.println("Result - "+result);
 		 ss.close();
 		 System.out.println("End...");
 	}

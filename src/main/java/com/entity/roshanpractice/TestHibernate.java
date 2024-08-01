@@ -46,13 +46,10 @@ static void forEmployeeData() {
 //	 ss.merge(e2);
 //	 ss.merge(e3);
 //	 ss.merge(e4);
-	 System.out.println("Step 4");
-	 EmployeeDetails emp1 = ss.load(EmployeeDetails.class, 4);
-	 System.out.println("Step 5");
+	 EmployeeDetails emp1 = ss.get(EmployeeDetails.class, 1);
 	 System.out.println("Emp1 - "+emp1);
 	 System.out.println("Step 6");
-	 EmployeeDetails emp2 = ss1.load(EmployeeDetails.class, 4);
-	 System.out.println("Step 7");
+	 EmployeeDetails emp2 = ss1.load(EmployeeDetails.class, 2);
 	 System.out.println("Emp2 - "+emp2);
 //	 tr.commit();
 //	 ss.close();
