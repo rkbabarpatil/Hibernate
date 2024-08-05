@@ -23,5 +23,11 @@
     <mapping class="com.entity.roshanpractice.Emp"/>
     <mapping class="com.entity.roshanpractice.CEmp"/>
     <mapping class="com.entity.roshanpractice.PEmp"/>
+    <mapping class="com.entity.roshanpractice.SEMP"/>
+    <mapping class="com.entity.roshanpractice.SPEmp"/>
+    <mapping class="com.entity.roshanpractice.SCEmp"/>
+    <mapping class="com.entity.roshanpractice.TSEMP"/>
+    <mapping class="com.entity.roshanpractice.TSPEmp"/>
+    <mapping class="com.entity.roshanpractice.TSCEmp"/>
   </session-factory>
 </hibernate-configuration>
