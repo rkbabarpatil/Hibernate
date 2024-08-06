@@ -29,5 +29,7 @@
     <mapping class="com.entity.roshanpractice.TSEMP"/>
     <mapping class="com.entity.roshanpractice.TSPEmp"/>
     <mapping class="com.entity.roshanpractice.TSCEmp"/>
+    <mapping class="com.mapping.Aadhar"/>
+   <mapping class="com.mapping.Person"/>
   </session-factory>
 </hibernate-configuration>
